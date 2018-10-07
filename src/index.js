@@ -1,26 +1,36 @@
 class SmartCalculator {
   constructor(initialValue) {
-    // your implementation
+    this.number = initialValue;
   }
 
   add(number) {
-    // your implementation
+    this.number = this.number + "+" + number;
+    // console.log(this)
+    return this
   }
-  
+
   subtract(number) {
-    // your implementation
+    this.number = this.number + "-" + number;
+    return this
   }
 
   multiply(number) {
-    // your implementation
+    this.number = this.number + "*" + number;
+    return this
   }
 
   devide(number) {
-    // your implementation
+    this.number = this.number + "/" + number;
+    return this
   }
 
   pow(number) {
-    // your implementation
+    this.number = this.number + "**" + number;
+    return this
+  }
+  valueOf() {
+    let result = eval(this.number);
+    return result
   }
 }
 
